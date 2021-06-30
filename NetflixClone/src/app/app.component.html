@@ -2,11 +2,13 @@
   <div class="header">
     <div class="header_banner">
       <h2>TITLE</h2>
-      <div class="header_buttons"
-         [ngStyle]="{
-      'background-image' : 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('++')'
-      }">
-
+      <div
+        class="header_buttons"
+        [ngStyle]="{
+          'background-image':
+            'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(' + '' + ')'
+        }"
+      >
         <button class="play-button">
           <mat-icon>arrow_right</mat-icon>
           <span>Play</span>
@@ -18,10 +20,15 @@
       </div>
     </div>
 
-    <div class="header_main" id="stickyHeader" [class.sticky] ="sticky" #stickyHeader>
+    <div
+      class="header_main"
+      id="stickyHeader"
+      [class.sticky]="sticky"
+      #stickyHeader
+    >
       <div class="header_left">
         <a routerLink="/">
-          <img src="/assets/netflix.svg" alt="logo">
+          <img src="/assets/netflix.svg" alt="logo" />
         </a>
         <ul>
           <li>
@@ -33,9 +40,17 @@
           </li>
         </ul>
       </div>
-      <div class="header_right"></div>
-
+      <div class="header_right">
+        <ul>
+          <li>
+            <a href=""><mat-icon>search</mat-icon></a>
+            <a href="">Children</a>
+            <a href=""><mat-icon>card_giftcard</mat-icon></a>
+            <a href=""><mat-icon>notifications</mat-icon></a>
+            <a href=""><mat-icon>search</mat-icon></a>
+          </li>
+        </ul>
+      </div>
     </div>
-
   </div>
 </div>
