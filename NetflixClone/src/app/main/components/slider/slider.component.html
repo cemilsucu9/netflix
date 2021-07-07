@@ -1,1 +1,12 @@
-<p>slider works!</p>
+<h2>{{ title }}</h2>
+<div class="movide">
+  <div class="movive_images">
+    <div class="thumbnails">
+      <ngx-slick-carousel [config]="sliderConfig" class="carousel">
+        <div class="slick-item" *ngFor="let t of [].constructor(6)">
+          <h4>Images</h4>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>
