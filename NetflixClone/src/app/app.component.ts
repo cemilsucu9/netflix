@@ -53,7 +53,7 @@ export class AppComponent implements OnInit, OnDestroy {
   handleScroll() {
     const windowScroll = window.pageYOffset;
 
-    if (windowScroll >= this.header.nativeElement.offsetHeight) {
+    if (windowScroll >= this.header?.nativeElement.offsetHeight) {
       this.sticky = true;
     } else {
       this.sticky = false;
